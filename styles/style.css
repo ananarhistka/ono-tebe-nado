@@ -87,17 +87,14 @@ li{
   font-weight: 400;
   line-height: 28px; 
   position: relative;
-  
-  
+  position:absolute;
+  top: 145px;
+  left: 372px;
+  word-spacing: 10px;
 }
 .sub-slogan {
   text-transform: uppercase;
-  word-spacing: 9px;
-  padding-left: 422px;
-  padding-bottom: 65px;
   position: relative;
-  padding-bottom: 50px;
-  padding-top:135px;
   
 }
 .button-text{
@@ -111,9 +108,72 @@ li{
   font-size: 22px;
   text-transform: uppercase;
 }
-
-
-.sub-slogan .button-text {
+.button-text {
+  position:absolute;
+  top: 135px;
+  right: 50px;
   float: right;
-  margin-right: 50px;
+}
+
+h2 {
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 180px;
+  margin-left: 90px;
+  margin-bottom: 27px;
+}
+.lot__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lot__item {
+  position: relative;
+  width: 430px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:  50px 40px;
+  
+}
+
+.lot__item-bg {
+  position: absolute;
+  background-color: rgba(0, 0, 0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+.lot__item-bg img {
+  opacity: 0.5;
+  
+} 
+
+.lot__item-title {
+  color: white;
+  position: relative;
+
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700; 
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+.lot__item-description{
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
 }
