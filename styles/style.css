@@ -130,6 +130,7 @@ h2 {
 .lot__list {
   display: flex;
   justify-content: space-between;
+  margin: 0 50px;
 }
 
 .lot__item {
@@ -139,8 +140,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding:  50px 40px;
-  
+  padding: 50px 40px;
 }
 
 .lot__item-bg {
@@ -150,7 +150,6 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-
 }
 .lot__item-bg img {
   opacity: 0.5;
@@ -160,7 +159,6 @@ h2 {
 .lot__item-title {
   color: white;
   position: relative;
-
   color: #FFF;
   font-family: Raleway;
   font-size: 22px;
@@ -177,3 +175,65 @@ h2 {
   font-weight: 400;
   position: relative;
 }
+.more-lots{
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  text-decoration: none;
+}
+.see-more{
+  padding: 40px 90px;
+}
+
+.about{
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+ 
+}
+.about__text {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px 0 455px;
+}
+.auction-text {
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 885px;
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.btn {
+  background-color: #000;
+  width: 240px;
+  height: 240px;
+  border: none;
+  border-radius: 120px;
+}
+.auction-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 182px 594px 0 145px;
+}
+.img-auction{
+  width: 148px;
+  height: 114px;
+}
+ 
