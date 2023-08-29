@@ -236,4 +236,31 @@ h2 {
   width: 148px;
   height: 114px;
 }
- 
+.footer__menu{
+  text-align: center;
+  padding: 180px 648px;
+  margin-top: 180px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  text-decoration: none;
+}
+ .foot{
+  white-space: nowrap;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  text-decoration: none;
+ }
+ .footer__link{
+  text-decoration: none;
+ }
+ .footer__address{
+  float: left;
+  
+ }
+ .img-footer{
+  width: 240px;
+  height: 48px;
+ }
