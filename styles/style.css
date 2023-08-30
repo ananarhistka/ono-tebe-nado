@@ -3,11 +3,9 @@
   margin: 0 auto;
   width: 1440px;
 }
-
 .row {
   display: flex;
 }
-
 ul {
   color: #000;
   font-family: Raleway;
@@ -16,7 +14,7 @@ ul {
   font-weight: 400;
   line-height: normal;
 }
-li{
+li {
   display:inline-block;
   justify-content: flex-start;
 }
@@ -39,15 +37,12 @@ li{
 .col-5 {
   flex-basis: 41.6666%;
 }
-
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
 }
-
-
 .welcome__picture {
   position:relative;
   background-image: url(../images/cover.jpg);
@@ -55,11 +50,9 @@ li{
   height: 757px;
   padding: 165px 50px 65px 50px;
 }
-
 .оно-tex-тебе-text-надо {
   padding-bottom: 20px;
 }
-
 .welcome__picture-background {
   position: absolute;
   top: 0;
@@ -79,7 +72,6 @@ li{
   text-transform: uppercase;
   position: relative;
 }
-
 .sab-logo {
   color: #FFF;
   font-family: Raleway;
@@ -95,7 +87,6 @@ li{
 .sub-slogan {
   text-transform: uppercase;
   position: relative;
-  
 }
 .button-text {
   color: white;
@@ -114,7 +105,6 @@ li{
   right: 50px;
   float: right;
 }
-
 h2 {
   color: #000;
   font-family: Raleway;
@@ -132,7 +122,6 @@ h2 {
   justify-content: space-between;
   margin: 0 50px;
 }
-
 .lot__item {
   position: relative;
   width: 430px;
@@ -142,7 +131,6 @@ h2 {
   justify-content: space-between;
   padding: 50px 40px;
 }
-
 .lot__item-bg {
   position: absolute;
   background-color: rgba(0, 0, 0);
@@ -152,10 +140,8 @@ h2 {
   height: 100%;
 }
 .lot__item-bg img {
-  opacity: 0.5;
-  
+  opacity: 0.5; 
 } 
-
 .lot__item-title {
   color: white;
   position: relative;
@@ -188,7 +174,6 @@ h2 {
 .see-more {
   padding: 40px 90px;
 }
-
 .about {
   color: #000;
   font-family: Raleway;
@@ -197,7 +182,6 @@ h2 {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
- 
 }
 .about__text {
   display: flex;
@@ -263,7 +247,6 @@ h2 {
   height: 24px;
  }
  .footer__link-menu {
-  
   text-underline-offset: 5px;
  }
  .address-two {
