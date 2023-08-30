@@ -28,7 +28,6 @@
   width: 240px;
   display: flex;
   flex-direction: column;
-  
 }
 .header__link {
   text-underline-position: under;
