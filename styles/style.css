@@ -91,7 +91,6 @@ li {
   position: relative;
 }
 .button-text {
-  font-family: Raleway; 
   color: white;
   background-color: transparent;
   border: 1px solid white;
@@ -145,7 +144,6 @@ h2 {
 .lot__item-title {
   color: white;
   position: relative;
-  color: #fff;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
