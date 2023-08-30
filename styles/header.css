@@ -3,7 +3,7 @@
   align-items: center;
   display: flex;
   margin-top: 92px;
-  margin-bottom: 96px;
+  margin-bottom: 92px;
 }
 .header__menu {
   margin-left: 50px;
@@ -28,7 +28,7 @@
   width: 240px;
   display: flex;
   flex-direction: column;
-  padding-top: 1px;
+  
 }
 .header__link {
   text-underline-position: under;
