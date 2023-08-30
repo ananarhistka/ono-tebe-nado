@@ -7,8 +7,8 @@
 }
 .header__menu {
   margin-left: 50px;
-  padding-top: 43px;
-  padding-bottom: 45px;
+  display: flex;
+  align-items: center;
 }
 .header__logo {
   display: flex;
@@ -28,7 +28,7 @@
   width: 240px;
   display: flex;
   flex-direction: column;
-  padding-top: 5px;
+  padding-top: 1px;
 }
 .header__link {
   text-underline-position: under;
