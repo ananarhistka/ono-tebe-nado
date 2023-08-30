@@ -180,12 +180,11 @@ h2 {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  padding-left: 120px;
 }
 .about__text {
   display: flex;
   flex-direction: column;
-  margin: 0 50px 0 505px;
+  margin: 0px 50px 0 505px;
 }
 .auction-text {
   color: #000;
@@ -213,7 +212,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin: 182px 644px 0 145px;
+  margin: 182px 644px 3px 145px;
 }
 .img-auction {
   width: 148px;
