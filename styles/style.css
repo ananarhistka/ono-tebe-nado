@@ -223,6 +223,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding: 180px 50px 124px;
+  line-height: 24.3px;
 }
 .footer__social-list-item {
   display: flex;
