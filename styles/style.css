@@ -97,7 +97,7 @@ li{
   position: relative;
   
 }
-.button-text{
+.button-text {
   color: white;
   background-color: transparent;
   border: 1px solid white;
@@ -167,7 +167,7 @@ h2 {
   text-decoration-line: underline;
   text-transform: uppercase;
 }
-.lot__item-description{
+.lot__item-description { 
   color: #FFF;
   font-family: Raleway;
   font-size: 20px;
@@ -175,7 +175,7 @@ h2 {
   font-weight: 400;
   position: relative;
 }
-.more-lots{
+.more-lots {
   color: #000;
   font-family: Raleway;
   font-size: 20px;
@@ -185,11 +185,11 @@ h2 {
   border-bottom: 2px solid rgb(0, 0, 0);
   text-decoration: none;
 }
-.see-more{
+.see-more {
   padding: 40px 90px;
 }
 
-.about{
+.about {
   color: #000;
   font-family: Raleway;
   font-size: 40px;
@@ -200,7 +200,6 @@ h2 {
  
 }
 .about__text {
-  float: right;
   display: flex;
   flex-direction: column;
   margin: 0 50px 0 455px;
@@ -232,35 +231,41 @@ h2 {
   position: relative;
   margin: 182px 594px 0 145px;
 }
-.img-auction{
+.img-auction {
   width: 148px;
   height: 114px;
 }
-.footer__menu{
-  text-align: center;
-  padding: 180px 648px;
-  margin-top: 180px;
-  color: #000;
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  text-decoration: none;
-}
- .foot{
-  white-space: nowrap;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  text-decoration: none;
+ .footer-list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 180px 50px 139px;
  }
- .footer__link{
-  text-decoration: none;
- }
- .footer__address{
-  float: left;
-  
- }
- .img-footer{
+ .footer__social-list-item {
+  display: flex;
   width: 240px;
+ }
+ .img-footer {
   height: 48px;
+ }
+ .footer__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .foot {
+  border-bottom: 2px solid rgb(0, 0, 0);
+  text-decoration: none;
+ }
+ .footer__address {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 24px;
+ }
+ .footer__link-menu {
+  
+  text-underline-offset: 5px;
+ }
+ .address-two {
+  font-style: normal;
  }
