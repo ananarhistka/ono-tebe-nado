@@ -6,9 +6,6 @@ html {
   margin: 0 auto;
   width: 1440px;
 }
-.row {
-  display: flex;
-}
 ul {
   color: #000;
   font-family: Raleway;
@@ -17,9 +14,11 @@ ul {
   font-weight: 400;
   line-height: normal;
 }
-li {
-  display: inline-block;
-  justify-content: flex-start;
+.active {
+  list-style-type: none;
+}
+.markers {
+  list-style-type: circle;
 }
 .bull {
   border: 1px solid #000;
