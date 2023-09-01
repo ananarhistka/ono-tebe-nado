@@ -5,66 +5,68 @@
     <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/header.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
     <header class="main-header">
-          <div class="header__menu">
-            <ul class="markers">
-              <li><a class="active header__link">главная</a></li>
-              <li>
-                <a href="#lot" class="header__link">посмотреть лоты</a>
-              </li>
-              <li>
-                <a href="#auction" class="header__link">об аукционе</a>
-              </li>
-            </ul>
-          </div>
-          <div class="header__logo">
-            <a href="/" class="header__logo-link">
-              <img
-                class="header__logo-image"
-                src="images/logo-black.svg"
-                alt="логотип черный"
-              />
-            </a>
-          </div>
-          <div class="header__address-container">
-            <div class="header__address">
-              <a href="tel:+99995555555" class="header__link">+9 999 555 5555</a>
-              <a target="_blank" href="mailto:info@sobaka.ge" class="header__link">info@sobaka.ge</a>
-              <address class="address">
-                наб. Принсенграхт 263-265, Амстердам
-              </address>
-            </div>
-          </div>
+      <nav class="main-header__menu">
+        <ul class="header__menu-list">
+          <li><a class="active header__menu-link">главная</a></li>
+          <li>
+            <a href="#lot" class="header__menu-link">посмотреть лоты</a>
+          </li>
+          <li>
+            <a href="#auction" class="header__menu-link">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-header__logo">
+        <a href="/" class="header__logo-link">
+          <img
+            class="header__logo-image"
+            src="images/logo-black.svg"
+            alt="логотип черный"
+          />
+        </a>
+      </div>
+      <!-- Тег address ревьюер рекомендовал навешать на весь блок -->
+      <div class="main-header__address">
+        <address>
+          <a href="tel:+99995555555" class="header__link">+9 999 555 5555</a>
+          <a target="_blank" href="mailto:info@sobaka.ge" class="header__link"
+            >info@sobaka.ge</a
+          >
+          <!-- Тут мне ревьюер рекомендовал использовать тег p -->
+          <p>наб. Принсенграхт 263-265, Амстердам</p>
+        </address>
+      </div>
     </header>
     <main>
-      <section class="container">
-        <div class="welcome__picture">
-          <div class="welcome__picture-background"></div>
-          <div class="welcome__picture-container">
-            <div class="welcome__picture-slogan оно-tex-тебе-text-надо">
-              <span>он о</span>
-            </div>
-            <div
-              class="welcome__picture-slogan оно-tex-тебе-text-надо text-center"
-            >
-              <span>теб е</span>
-            </div>
-            <div class="welcome__picture-slogan text-right">
-              <span>н адо</span>
-            </div>
-          </div>
-          <div class="sub-slogan">
-            <span class="sab-logo">
-              аукцион вещей, в которые никто не верил
-            </span>
-            <button type="button" class="button-text">сделать вставку</button>
-          </div>
+      <section class="welcome__picture">
+        <div class="dark-bg-block">
+          <img src="images/cover.jpg" title="Что-то красивое" />
+        </div>
+        <div class="welcome__picture-slogan">
+          <p>
+            <span class="letter-spacing-3">о</span
+            ><span class="letter-spacing-3">но</span>
+            </p>
+          <p class="text-center">
+            <span class="letter-spacing-3">те</span
+            ><span class="letter-spacing-6">бе</span>
+            </p>
+          <p class="text-right">
+            <span class="letter-spacing-6">н</span
+            ><span class="letter-spacing-3">адо</span>
+            </p>
+        </div>
+        <div class="welcome__picture-subslogan">
+          <p>
+            аукцион вещей, в которые никто не верил
+          </p>
+          <button type="button" class="button-bet">сделать вставку</button>
         </div>
       </section>
       <section class="section-lot" id="lot">
@@ -72,8 +74,8 @@
           <h2>Лоты</h2>
           <div class="lot__list">
             <div class="lot__item">
-              <div class="lot__item-bg">
-                <img src="./images/card-lot-01.jpg" alt="девочка с мальчиком"/>
+              <div class="dark-bg-block">
+                <img src="./images/card-lot-01.jpg" alt="девочка с мальчиком" />
               </div>
               <div class="lot__item-title">
                 Фильм режиссёра, который бросил киношколу
@@ -84,8 +86,8 @@
               </div>
             </div>
             <div class="lot__item">
-              <div class="lot__item-bg">
-                <img src="./images/card-lot-02.jpg" alt="красная дверь"/>
+              <div class="dark-bg-block">
+                <img src="./images/card-lot-02.jpg" alt="красная дверь" />
               </div>
               <div class="lot__item-title">
                 Книга, где описан один скучный день из жизни рекламного агента
@@ -100,8 +102,8 @@
               </div>
             </div>
             <div class="lot__item">
-              <div class="lot__item-bg">
-                <img src="./images/card-lot-03.jpg" alt="абстракция"/>
+              <div class="dark-bg-block">
+                <img src="./images/card-lot-03.jpg" alt="абстракция" />
               </div>
               <div class="lot__item-title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
@@ -123,10 +125,13 @@
         <div class="container">
           <div class="auction-btn">
             <button class="btn">
-              <img class="img-auction" src="images/logo-white.svg" alt="белый логотип"/>
+              <img
+                class="img-auction"
+                src="images/logo-white.svg"
+                alt="белый логотип"
+              />
             </button>
-            <div class="about"><span>Об аукционе</span>
-            </div>
+            <div class="about"><span>Об аукционе</span></div>
           </div>
           <div class="about__text">
             <div class="auction-text">
@@ -153,10 +158,17 @@
       <div class="container">
         <div class="footer-list-item">
           <div class="footer__address">
-            <a href="tel:+99995555555" class="footer__link-menu">+9 999 555 5555</a>
-            <a target="_blank" href=" mailto:info@sobaka.ge" class="footer__link-menu">info@sobaka.ge</a>
+            <a href="tel:+99995555555" class="footer__link-menu"
+              >+9 999 555 5555</a
+            >
+            <a
+              target="_blank"
+              href=" mailto:info@sobaka.ge"
+              class="footer__link-menu"
+              >info@sobaka.ge</a
+            >
             <address class="address-two">
-              наб. Принсенграхт 263-265, <br>Амстердам<br>
+              наб. Принсенграхт 263-265, <br />Амстердам<br />
             </address>
           </div>
           <div class="footer__menu">
@@ -165,9 +177,13 @@
             <a href="#auction" class="footer__link foot">об аукционе</a>
           </div>
           <div class="footer__social-list-item">
-            <img class="img-footer" src="images/yt.svg" alt="логотип ютуб"/>
-            <img class="img-footer" src="images/vk.svg" alt="логотип вк"/>
-            <img class="img-footer" src="images/pinterest.svg" alt="логотип пинтерест"/>
+            <img class="img-footer" src="images/yt.svg" alt="логотип ютуб" />
+            <img class="img-footer" src="images/vk.svg" alt="логотип вк" />
+            <img
+              class="img-footer"
+              src="images/pinterest.svg"
+              alt="логотип пинтерест"
+            />
           </div>
         </div>
       </div>

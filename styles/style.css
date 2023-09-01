@@ -2,95 +2,157 @@
 html {
   scroll-behavior: smooth;
 }
-.container {
+
+body {
   margin: 0 auto;
-  width: 1440px;
-}
-ul {
-  color: #000;
-  font-family: Raleway;
+  max-width: 1440px;
+  font-family: Raleway Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 24.3px;
+  color: #000;
 }
-.active {
-  list-style-type: none;
+
+/* место для вашего кода */
+
+/*
+ТИПОГРАФИЯ
+*/
+.text-body-lg {
+  font-size: 20px;
 }
-.markers {
-  list-style-type: circle;
-}
-.bull {
-  border: 1px solid #000;
-  border-radius: 50%;
-  width: 7px;
-  height: 7px;
-  stroke-width: 1px;
-  stroke: #000;
-  margin-left: 13px;
-  margin-right: 12px;
-}
-.col-2 {
-  flex-basis: 16.6666%;
-}
-.col-4 {
-  flex-basis: 33.333%;
-}
-.col-5 {
-  flex-basis: 41.6666%;
-}
+
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
 }
-.welcome__picture {
-  position: relative;
-  background-image: url(../images/cover.jpg);
-  width: 1440px;
-  height: 757px;
-  padding: 165px 50px 65px 50px;
-  background-size: cover;
+.letter-spacing-3 {
+  letter-spacing: 0.3em;
 }
-.оно-tex-тебе-text-надо {
-  padding-bottom: 20px;
+.letter-spacing-6 {
+  letter-spacing: 0.6em;
 }
-.welcome__picture-background {
+/*
+COMMON
+*/
+
+.dark-bg-block {
   position: absolute;
+  background-color: rgba(0, 0, 0);
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
 }
+.dark-bg-block img {
+  opacity: 0.5;
+  height: 100%;
+}
+
+/*
+  MAIN HEADER
+*/
+
+.main-header {
+  align-items: center;
+  display: flex;
+  margin-top: 92px;
+  margin-bottom: 92px;
+  padding: 0 50px;
+}
+
+.main-header__menu {
+  width: calc(50% - 74px); /* 74px - Половина от ширины Логотипа */
+}
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 148px;
+}
+
+.main-header__address {
+  display: flex;
+  justify-content: end;
+  width: calc(50% - 74px); /* 74px - Половина от ширины Логотипа */
+}
+
+.main-header__address address {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.main-header__logo-image {
+  width: 100%;
+  height: 105px;
+}
+
+.main-header__menu ul {
+  list-style-type: circle;
+  display: flex;
+}
+.main-header__menu ul li {
+  margin-right: 32px;
+}
+.main-header__menu ul li:first-child::marker {
+  color: transparent;
+}
+
+.main-header__menu ul li::marker {
+  margin-left: 5px;
+}
+
+.header__menu-link {
+  text-underline-position: under;
+}
+
+.header__menu-link.active {
+  list-style-type: none;
+}
+
+/*
+SECTION WELCOME
+*/
+
+.welcome__picture {
+  position: relative;
+  min-height: 757px;
+  padding: 165px 50px 65px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .welcome__picture-slogan {
   color: #fff;
-  font-family: Raleway;
   font-size: 100px;
-  font-style: normal;
   font-weight: 700;
   line-height: 100%;
-  letter-spacing: 25px;
   text-transform: uppercase;
   position: relative;
 }
-.sab-logo {
+.welcome__picture-subslogan {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.welcome__picture-subslogan p {
   color: #fff;
-  font-family: Raleway;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
-  position: relative;
-  top: 145px;
-  left: 372px;
+  text-transform: uppercase;
   word-spacing: 10px;
 }
-.sub-slogan {
-  text-transform: uppercase;
-  position: relative;
-}
-.button-text {
+
+.button-bet {
   color: white;
   background-color: transparent;
   border: 1px solid white;
@@ -99,11 +161,9 @@ ul {
   line-height: 52px;
   font-size: 22px;
   text-transform: uppercase;
-  position: absolute;
-  top: 135px;
-  right: 50px;
-  float: right;
+  margin-left: 78px;
 }
+
 h2 {
   color: #000;
   font-family: Raleway;
@@ -130,17 +190,7 @@ h2 {
   justify-content: space-between;
   padding: 50px 40px;
 }
-.lot__item-bg {
-  position: absolute;
-  background-color: rgba(0, 0, 0);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.lot__item-bg img {
-  opacity: 0.5;
-}
+
 .lot__item-title {
   color: white;
   position: relative;
