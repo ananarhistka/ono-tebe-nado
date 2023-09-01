@@ -5,8 +5,8 @@ html {
 
 body {
   margin: 0 auto;
-  max-width: 1440px;
-  font-family: Raleway Arial, Helvetica, sans-serif;
+  width: 1440px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -60,19 +60,19 @@ COMMON
   align-items: center;
   display: flex;
   margin-top: 92px;
-  margin-bottom: 92px;
+  margin-bottom: 96px;
   padding: 0 50px;
+  white-space: nowrap;
 }
 
 .main-header__menu {
-  width: calc(50% - 74px); /* 74px - Половина от ширины Логотипа */
+  width: calc(50% - 148px / 2); /* 74px - Половина от ширины Логотипа */
 }
 
 .main-header__logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 148px;
 }
 
 .main-header__address {
@@ -88,14 +88,15 @@ COMMON
   font-style: normal;
 }
 
-.main-header__logo-image {
-  width: 100%;
+.header__logo-image{
+  width: 148px;
   height: 105px;
 }
 
 .main-header__menu ul {
   list-style-type: circle;
   display: flex;
+  align-items: center;
 }
 .main-header__menu ul li {
   margin-right: 32px;
@@ -143,6 +144,10 @@ SECTION WELCOME
   justify-content: end;
   align-items: center;
 }
+.welcome__picture-slogan p {
+  margin-bottom: 20px;
+}
+
 .welcome__picture-subslogan p {
   color: #fff;
   font-size: 22px;
@@ -166,7 +171,7 @@ SECTION WELCOME
 
 h2 {
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -202,7 +207,7 @@ h2 {
 }
 .lot__item-description {
   color: #fff;
-  font-family: Raleway;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -210,7 +215,7 @@ h2 {
 }
 .more-lots {
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -223,7 +228,7 @@ h2 {
 }
 .about {
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -237,7 +242,7 @@ h2 {
 }
 .auction-text {
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
