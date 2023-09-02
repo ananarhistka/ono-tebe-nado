@@ -344,7 +344,7 @@ footer {
 .footer-list-item {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 124px;
+  padding-bottom: 90px;
 }
 
 .footer__social-list-item {
