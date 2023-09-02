@@ -12,13 +12,13 @@
   <body>
     <header class="main-header">
       <nav class="main-header__menu">
-        <ul class="header__menu-list">
-          <li><a class="active header__menu-link">главная</a></li>
+        <ul class="main-menu__list">
+          <li><a class="main-menu__link active">главная</a></li>
           <li>
-            <a href="#lot" class="header__menu-link">посмотреть лоты</a>
+            <a href="#lot" class="main-menu__link">посмотреть лоты</a>
           </li>
           <li>
-            <a href="#auction" class="header__menu-link">об аукционе</a>
+            <a href="#auction" class="main-menu__link">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -31,42 +31,40 @@
           />
         </a>
       </div>
-      <!-- Тег address ревьюер рекомендовал навешать на весь блок -->
       <div class="main-header__address">
         <address>
-          <a href="tel:+99995555555" class="header__link">+9 999 555 5555</a>
-          <a target="_blank" href="mailto:info@sobaka.ge" class="header__link"
+          <a href="tel:+99995555555" class="address__link">+9 999 555 5555</a>
+          <a target="_blank" href="mailto:info@sobaka.ge" class="address__link"
             >info@sobaka.ge</a
           >
-          <!-- Тут мне ревьюер рекомендовал использовать тег p -->
           <p>наб. Принсенграхт 263-265, Амстердам</p>
         </address>
       </div>
     </header>
     <main>
       <section class="welcome__picture">
-        <div class="dark-bg-block">
-          <img src="images/cover.jpg" title="Что-то красивое" />
-        </div>
+        <div
+          class="overlay-bg"
+          style="background-image: url('./images/cover.jpg')"
+        ></div>
         <div class="welcome__picture-slogan">
           <p>
             <span class="letter-spacing-3">о</span
             ><span class="letter-spacing-6">но</span>
-            </p>
-          <p class="text-center">
+          </p>
+          <!-- Угарно конечно, но чтобы сходилось с макетом пришлось поставить -2px, так как по макетам разные отступы -->
+          <p class="text-center" style="margin-bottom: -2px">
             <span class="letter-spacing-3">те</span
             ><span class="letter-spacing-6">бе</span>
-            </p>
+          </p>
           <p class="text-right">
             <span class="letter-spacing-6">н</span
-            ><span class="letter-spacing-3">адо</span>
-            </p>
+            ><span class="letter-spacing-3">ад</span>о
+          </p>
         </div>
         <div class="welcome__picture-subslogan">
-          <p>
-            аукцион вещей, в которые никто не верил
-          </p>
-          <button type="button" class="button-bet">сделать вставку</button>
+          <p>аукцион вещей, в которые никто не верил</p>
+          <button type="button" class="button-bet">сделать ставку</button>
         </div>
       </section>
       <section class="section-lot" id="lot">
@@ -74,83 +72,74 @@
           <h2>Лоты</h2>
           <div class="lot__list">
             <div class="lot__item">
-              <div class="dark-bg-block">
-                <img src="./images/card-lot-01.jpg" alt="девочка с мальчиком" />
-              </div>
-              <div class="lot__item-title">
+              <div class="overlay-bg card_type_film"></div>
+              <h3 class="lot__item-title">
                 Фильм режиссёра, который бросил киношколу
-              </div>
-              <div class="lot__item-description">
+              </h3>
+              <p class="lot__item-description">
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                 ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </div>
+              </p>
             </div>
             <div class="lot__item">
-              <div class="dark-bg-block">
-                <img src="./images/card-lot-02.jpg" alt="красная дверь" />
-              </div>
-              <div class="lot__item-title">
+              <div class="overlay-bg card_type_book"></div>
+              <h3 class="lot__item-title">
                 Книга, где описан один скучный день из жизни рекламного агента
-              </div>
-              <div class="lot__item-description">
+              </h3>
+              <p class="lot__item-description">
                 Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
                 переходами на древнеанглийский. В ней одновременно
                 рассказывается о 16 июня 1904 года и об истории литературы,
                 начиная с античных времён. И это всё накладывается на эпическую
                 поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
                 Джойса?
-              </div>
+              </p>
             </div>
             <div class="lot__item">
-              <div class="dark-bg-block">
-                <img src="./images/card-lot-03.jpg" alt="абстракция" />
-              </div>
-              <div class="lot__item-title">
+              <div class="overlay-bg card_type_picture"></div>
+              <h3 class="lot__item-title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
-              </div>
-              <div class="lot__item-description">
+              </h3>
+              <p class="lot__item-description">
                 Ну действительно, там линия, тут кружочек, а здесь и вовсе
                 что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                 котиков… Сколько бы вы на такое поставили, если бы не знали, что
                 это — одна из революционных работ Кандинского?
-              </div>
+              </p>
             </div>
           </div>
           <div class="see-more">
-            <a href="in" class="more-lots">посмотреть больше</a>
+            <a href="in" class="lots-link">посмотреть больше</a>
           </div>
         </div>
       </section>
       <section class="section-auction" id="auction">
-        <div class="container">
-          <div class="auction-btn">
-            <button class="btn">
-              <img
-                class="img-auction"
-                src="images/logo-white.svg"
-                alt="белый логотип"
-              />
-            </button>
-            <div class="about"><span>Об аукционе</span></div>
-          </div>
-          <div class="about__text">
-            <div class="auction-text">
-              Здесь вы не встретите очередное пафосное собрание невероятно
-              дорогого антиквариата. Наши лоты вообще не должны были попасть ни
-              на один аукцион. Потому что кому нужен дневник девочки-подростка
-              или картина, которую может нарисовать даже ребёнок? Кому нужны все
-              эти странные вещи, созданные любителями?
-            </div>
-            <div class="auction-text">
-              Слишком сложные или, наоборот, слишком простые. Опережающие своё
-              время. В пух и прах растерзанные критиками. Непринятые и
-              непонятые. Когда-то они казались просто неудачными. Но, несмотря
-              на критику, кажущуюся простоту или сложность, сейчас без этих
-              лотов невозможно представить современную культуру. Когда в эти
-              вещи не верил никто, продолжали верить их создатели. И сейчас эти
-              лоты стали культовыми.
-            </div>
-          </div>
+        <div class="auction__logo">
+          <picture>
+            <img
+              class="img-auction"
+              src="images/logo-white.svg"
+              alt="белый логотип"
+            />
+          </picture>
+        </div>
+        <div class="about__text">
+          <h2 class="about__text-title">Об аукционе</h2>
+          <p class="auction-text">
+            Здесь вы не встретите очередное пафосное собрание невероятно
+            дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
+            один аукцион. Потому что кому нужен дневник девочки-подростка или
+            картина, которую может нарисовать даже ребёнок? Кому нужны все эти
+            странные вещи, созданные любителями?
+          </p>
+          <p>
+            Слишком сложные или, наоборот, слишком простые. Опережающие своё
+            время. В пух и прах растерзанные критиками. Непринятые и непонятые.
+            Когда-то они казались просто неудачными. Но, несмотря на критику,
+            кажущуюся простоту или сложность, сейчас без этих лотов невозможно
+            представить современную культуру. Когда в эти вещи не верил никто,
+            продолжали верить их создатели. И сейчас эти лоты стали культовыми.
+          </p>
         </div>
       </section>
     </main>
@@ -158,32 +147,34 @@
       <div class="container">
         <div class="footer-list-item">
           <div class="footer__address">
-            <a href="tel:+99995555555" class="footer__link-menu"
-              >+9 999 555 5555</a
-            >
-            <a
-              target="_blank"
-              href=" mailto:info@sobaka.ge"
-              class="footer__link-menu"
-              >info@sobaka.ge</a
-            >
-            <address class="address-two">
-              наб. Принсенграхт 263-265, <br />Амстердам<br />
+            <address>
+              <a href="tel:+99995555555" class="address__link">
+                +9 999 555 5555
+              </a>
+              <a
+                target="_blank"
+                href="mailto:info@sobaka.ge"
+                class="address__link"
+                >info@sobaka.ge</a
+              >
+              <p>наб. Принсенграхт 263-265, Амстердам</p>
             </address>
           </div>
-          <div class="footer__menu">
-            <a class="footer__link">главная</a>
-            <a href="#lot" class="footer__link foot">посмотреть лоты</a>
-            <a href="#auction" class="footer__link foot">об аукционе</a>
-          </div>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li><a class="main-menu__link active">главная</a></li>
+              <li>
+                <a href="#lot" class="main-menu__link">посмотреть лоты</a>
+              </li>
+              <li>
+                <a href="#auction" class="main-menu__link">об аукционе</a>
+              </li>
+            </ul>
+          </nav>
           <div class="footer__social-list-item">
-            <img class="img-footer" src="images/yt.svg" alt="логотип ютуб" />
-            <img class="img-footer" src="images/vk.svg" alt="логотип вк" />
-            <img
-              class="img-footer"
-              src="images/pinterest.svg"
-              alt="логотип пинтерест"
-            />
+            <img src="images/yt.svg" alt="логотип ютуб" />
+            <img src="images/vk.svg" alt="логотип вк" />
+            <img class src="images/pinterest.svg" alt="логотип пинтерест" />
           </div>
         </div>
       </div>
