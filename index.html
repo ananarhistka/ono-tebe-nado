@@ -13,7 +13,9 @@
     <header class="main-header">
       <nav class="main-header__menu">
         <ul class="main-menu__list">
-          <li><a class="main-menu__link active">главная</a></li>
+          <li class="no-marker">
+            <a class="main-menu__link active">главная</a>
+          </li>
           <li>
             <a href="#lot" class="main-menu__link">посмотреть лоты</a>
           </li>
@@ -42,26 +44,22 @@
       </div>
     </header>
     <main>
-      <section class="welcome__picture">
-        <div
-          class="overlay-bg"
-          style="background-image: url('./images/cover.jpg')"
-        ></div>
-        <div class="welcome__picture-slogan">
-          <p>
-            <span class="letter-spacing-3">о</span
-            ><span class="letter-spacing-6">но</span>
-          </p>
-          <!-- Угарно конечно, но чтобы сходилось с макетом пришлось поставить -4px, так как по макетам разные отступы -->
-          <p class="text-center" style="margin-bottom: -4px">
-            <span class="letter-spacing-3">те</span
-            ><span class="letter-spacing-6">бе</span>
-          </p>
-          <p class="text-right">
-            <span class="letter-spacing-6">н</span
-            ><span class="letter-spacing-3">ад</span>о
-          </p>
-        </div>
+      <section class="welcome__picture overlay-img">
+        <div class="overlay-bg"></div>
+        <h1 class="welcome__picture-slogan">
+          <span>
+            <span class="letter-spacing-sm">о</span
+            ><span class="letter-spacing-lg">но</span>
+          </span>
+          <span class="text-center">
+            <span class="letter-spacing-sm">те</span
+            ><span class="letter-spacing-lg">бе</span>
+          </span>
+          <span class="text-right">
+            <span class="letter-spacing-lg">н</span
+            ><span class="letter-spacing-sm">ад</span>о
+          </span>
+        </h1>
         <div class="welcome__picture-subslogan">
           <p>аукцион вещей, в которые никто не верил</p>
           <button type="button" class="button-bet">сделать ставку</button>
@@ -71,8 +69,8 @@
         <div class="container">
           <h2>Лоты</h2>
           <div class="lot__list">
-            <div class="lot__item">
-              <div class="overlay-bg card_type_film"></div>
+            <div class="lot__item overlay-img overlay-bg card_type_film">
+              <div class="overlay-bg"></div>
               <h3 class="lot__item-title">
                 Фильм режиссёра, который бросил киношколу
               </h3>
@@ -81,8 +79,8 @@
                 ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
               </p>
             </div>
-            <div class="lot__item">
-              <div class="overlay-bg card_type_book"></div>
+            <div class="lot__item overlay-img card_type_book">
+              <div class="overlay-bg"></div>
               <h3 class="lot__item-title">
                 Книга, где описан один скучный день из жизни рекламного агента
               </h3>
@@ -95,8 +93,8 @@
                 Джойса?
               </p>
             </div>
-            <div class="lot__item">
-              <div class="overlay-bg card_type_picture"></div>
+            <div class="lot__item overlay-img card_type_picture">
+              <div class="overlay-bg"></div>
               <h3 class="lot__item-title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </h3>
@@ -132,7 +130,7 @@
             картина, которую может нарисовать даже ребёнок? Кому нужны все эти
             странные вещи, созданные любителями?
           </p>
-          <p>
+          <p class="auction-text">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё
             время. В пух и прах растерзанные критиками. Непринятые и непонятые.
             Когда-то они казались просто неудачными. Но, несмотря на критику,
@@ -174,7 +172,7 @@
           <div class="footer__social-list-item">
             <img src="images/yt.svg" alt="логотип ютуб" />
             <img src="images/vk.svg" alt="логотип вк" />
-            <img class src="images/pinterest.svg" alt="логотип пинтерест" />
+            <img src="images/pinterest.svg" alt="логотип пинтерест" />
           </div>
         </div>
       </div>
