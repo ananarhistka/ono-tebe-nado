@@ -48,7 +48,6 @@ h2 {
   text-align: center;
   line-height: 100%;
   margin-top: 20px;
-  padding-top: 8px;
 }
 
 .text-right {
@@ -186,7 +185,6 @@ SECTION WELCOME
   flex-direction: column;
   justify-content: space-between;
   background-image: url("../images/cover.jpg");
-  line-height: 115%;
 }
 
 .welcome__picture-slogan {
@@ -197,8 +195,8 @@ SECTION WELCOME
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 173px;
-  line-height: 100%;
+  margin-top: 165px;
+  line-height: 115%;
 }
 
 .welcome__picture-subslogan {
