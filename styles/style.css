@@ -46,11 +46,17 @@ h2 {
 
 .text-center {
   text-align: center;
+  line-height: 100%;
+  margin-top: 20px;
+  padding-top: 8px;
 }
 
 .text-right {
   text-align: right;
+  line-height: 100%;
+  margin-top: 20px;
 }
+
 
 .letter-spacing-sm {
   letter-spacing: 0.3em;
@@ -167,22 +173,20 @@ footer nav.main-menu ul {
 SECTION WELCOME
 */
 
-.welcome__picture-slogan > span:first-child {
-  margin-bottom: 12px;
-}
-
+/*
 .welcome__picture-slogan > span:nth-child(2) {
   margin-bottom: 2px;
 }
-
+*/
 .welcome__picture {
   position: relative;
   min-height: 757px;
-  padding: 165px 50px 48px 50px;
+  padding: 0 50px 48px 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-image: url("../images/cover.jpg");
+  line-height: 115%;
 }
 
 .welcome__picture-slogan {
@@ -193,6 +197,8 @@ SECTION WELCOME
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: 173px;
+  line-height: 100%;
 }
 
 .welcome__picture-subslogan {
