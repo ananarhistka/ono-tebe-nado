@@ -7,7 +7,7 @@
 
 .header__links-list {
   display: flex;
-  gap: 32px;
+  gap: 34px;
 }
 
 .header__links-list-item {
@@ -103,7 +103,7 @@
   align-items: center;
   justify-content: flex-end;
   z-index: 1;
-  gap: 78px;
+  gap: 81px;
   padding-right: 50px;
 }
 
